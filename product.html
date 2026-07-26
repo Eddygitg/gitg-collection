@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product | GITG Collection</title>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/product.css">
+
+</head>
+<body>
+<header>
+
+    <div class="logo">
+        <img src="images/logo.png" alt="GITG Logo">
+    </div>
+
+    <nav>
+
+        <a href="index.html" class="nav-link">Home</a>
+
+        <a href="shop.html" class="nav-link">Shop</a>
+
+        <a href="about.html" class="nav-link">About</a>
+
+        <a href="contact.html" class="nav-link">Contact</a>
+
+    </nav>
+     
+        <button id="wishlist-btn">
+
+            ❤️
+
+            <span id="wishlist-count">0</span>
+
+        </button>
+    <div class="header-icons">
+
+        <button id="cart-btn">
+            🛒
+            <span id="cart-count">0</span>
+        </button>
+
+    </div>
+
+</header>
+<section class="breadcrumb">
+
+    <div class="container">
+
+        <a href="index.html">Home</a>
+
+        /
+
+        <a href="shop.html">Shop</a>
+
+        /
+
+    <span id="breadcrumb-product-name"></span>
+
+    </div>
+
+</section>
+   <section class="product-page">
+
+    <div class="container">
+
+        <div class="product-wrapper">
+
+            <!-- LEFT SIDE -->
+            <div class="product-gallery">
+
+            <div class="main-image">
+
+            <div class="image-zoom-container">
+
+                <img
+                    id="main-product-image"
+                    src=""
+                    alt=""
+                >
+
+            </div>
+
+        </div>
+
+            <div class="thumbnail-images">
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="product-details">
+
+                <h1>GITG Believe Black T-shirt</h1>
+
+                <div class="product-rating">
+                    ★★★★★
+                    <span>(24 Reviews)</span>
+                </div>
+
+                <p class="product-price">
+                    ₦35,000
+                </p>
+
+                <p class="product-description">
+                    Premium oversized Christian streetwear made with high-quality cotton.
+                    Designed for everyday comfort while boldly expressing your faith.
+                </p>
+
+                <div class="color-selector">
+
+                    <h3>Select Color</h3>
+
+                    <div id="color-buttons"></div>
+
+                </div>
+
+                <div class="size-selector">
+
+                <h3>Select Size</h3>
+
+                <div id="size-buttons"></div>
+
+              </div>
+
+                <div class="quantity-selector">
+
+             <button id="minus-btn">−</button>
+
+                <span id="quantity">1</span>
+
+                <button id="plus-btn">+</button>
+
+            </div>
+            <div class="product-extra-info">
+
+                <p class="stock-status">
+                    ✅ In Stock
+                </p>
+
+                <p class="delivery-info">
+                    🚚 Estimated delivery: 2–5 Business Days
+                </p>
+
+                <p class="secure-payment">
+                    🔒 Secure Checkout Guaranteed
+                </p>
+
+            </div>
+
+                <button
+                    class="primary-btn"
+                    id="product-add-cart"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     YOU MAY ALSO LIKE
+========================= -->
+<section class="related-products">
+
+    <div class="container">
+
+        <h2>You May Also Like</h2>
+
+        <div id="related-products-grid" class="products">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     Tabs
+========================= -->
+
+<section class="product-tabs">
+
+    <div class="container">
+
+        <div class="tab-buttons">
+
+            <button class="tab-btn active-tab" data-tab="description">
+                Description
+            </button>
+
+            <button class="tab-btn" data-tab="shipping">
+                Shipping
+            </button>
+
+            <button class="tab-btn" data-tab="returns">
+                Returns
+            </button>
+
+        </div>
+
+        <div class="tab-content active-content" id="description">
+
+            <p id="description-text">
+                Premium oversized Christian streetwear made with high-quality cotton.
+            </p>
+
+        </div>
+
+        <div class="tab-content" id="shipping">
+
+            <p>
+                Orders are processed within 1–2 business days.
+                Delivery takes 3–7 business days within Nigeria.
+            </p>
+
+        </div>
+
+        <div class="tab-content" id="returns">
+
+            <p>
+                Returns are accepted within 7 days for unworn items in their original condition.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     CART SIDEBAR
+========================= -->
+
+<div id="cart-sidebar">
+
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+
+        <button id="close-cart">&times;</button>
+    </div>
+
+    <div id="cart-items">
+
+        <p class="empty-cart">
+            Your cart is empty.
+        </p>
+
+    </div>
+
+    <div class="cart-footer">
+
+        <h3>
+            Total:
+            <span id="cart-total">₦0</span>
+        </h3>
+
+        <button class="primary-btn">
+            Checkout
+        </button>
+
+    </div>
+
+</div>
+
+<div id="cart-overlay"></div>
+
+<!-- ==========================
+     IMAGE LIGHTBOX
+========================== -->
+
+<div id="lightbox">
+
+    <span id="close-lightbox">&times;</span>
+
+    <button id="prev-image">&#10094;</button>
+
+    <img id="lightbox-image" src="" alt="">
+
+    <button id="next-image">&#10095;</button>
+
+</div>
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script src="js/products.js"></script>
+<script src="js/script.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>

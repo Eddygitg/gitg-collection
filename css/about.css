@@ -1,0 +1,283 @@
+/* ==========================
+   ABOUT HERO
+========================== */
+
+.about-hero{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:100px 20px;
+
+}
+
+.about-hero h1{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+.about-hero p{
+
+    font-size:1.2rem;
+
+    color:#ddd;
+
+}
+
+/* ==========================
+   GLOBAL CONTAINER
+========================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+/* ==========================
+   OUR STORY
+========================== */
+
+.about-story{
+
+    padding:80px 20px;
+
+}
+
+.about-story h2{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    color:var(--secondary-color);
+
+}
+
+.about-story p{
+
+    font-size:1.1rem;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+
+    text-align:justify;
+
+}
+
+/* ==========================
+   MISSION & VISION
+========================== */
+
+.mission{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:80px auto;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.card h2{
+
+    color:var(--secondary-color);
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================
+   VALUES
+========================== */
+
+.values{
+
+    background:#f8f8f8;
+
+    padding:80px 20px;
+
+}
+
+.values h2{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.value-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.value-card{
+
+    background:white;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.value-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.value-card h3{
+
+    color:var(--secondary-color);
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================
+   CLOSING
+========================== */
+
+.closing{
+
+    text-align:center;
+
+    padding:90px 20px;
+
+}
+
+.closing h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:20px;
+
+}
+
+.closing p{
+
+    width:70%;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.shop-btn{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:var(--secondary-color);
+
+    color:#111;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.shop-btn:hover{
+
+    background:#111;
+
+    color:white;
+
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media(max-width:768px){
+
+    .mission{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .value-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .closing p{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:500px){
+
+    .value-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .about-hero h1{
+
+        font-size:2.2rem;
+
+    }
+
+}

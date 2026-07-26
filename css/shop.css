@@ -1,0 +1,332 @@
+
+:root{
+    --primary-color: #1a1a1a;
+    --secondary-color: #d4af37;
+}
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    color:#222;
+
+    background:#fff;
+
+}
+
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:var(--primary-color);
+
+    border-bottom:1px solid #eee;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+header nav a:hover,
+header nav a.active{
+    color:#d4af37;
+}
+
+.logo img{
+
+    width:140px;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#d4af37;
+
+}
+
+nav .active{
+
+    color:#d4af37;
+
+}
+
+
+
+/* ==========================================
+   SHOP HERO
+========================================== */
+.shop-hero{
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+.shop-hero h1{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+.shop-hero p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+
+/* ==========================================
+   SEARCH BAR
+========================================== */
+
+.search-section{
+
+    width:90%;
+
+    max-width:700px;
+
+    margin:0 auto;
+    
+    align-items:center;
+
+}
+
+.search-section input{
+
+    width:100%;
+
+    padding:18px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.search-section input:focus{
+
+    border-color:#d4af37;
+
+}
+
+
+
+/* ==========================================
+   SHOP TOOLS
+========================================== */
+
+
+.shop-tools{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:40px auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+
+
+/* ==========================================
+   CATEGORY BUTTONS
+========================================== */
+
+.categories{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.categories button{
+
+    padding:12px 24px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#111;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.categories button:hover{
+
+    background:#d4af37;
+
+    color:#111;
+
+    transform:translateY(-3px);
+
+}
+
+.active-btn{
+
+    background:#d4af37 !important;
+
+    color:#111 !important;
+
+}
+
+
+
+/* ==========================================
+   SORT DROPDOWN
+========================================== */
+
+.sort-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.sort-box label{
+
+    font-weight:600;
+
+}
+
+.sort-box select{
+
+    padding:12px 18px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    outline:none;
+
+    cursor:pointer;
+
+}
+
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    nav{
+
+        gap:20px;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .shop-tools{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+}
+.shop-products{
+    margin-bottom: 80px;
+}
+#products{
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+}

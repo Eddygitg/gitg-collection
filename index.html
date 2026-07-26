@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GITG Collection</title>
+</head>
+<body>
+<header>
+   <div class="logo">
+        <a href="index.html">
+            <img src="images/logo.png" alt="GITG Logo">
+        </a>
+    </div>
+
+    <nav>
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+     <button id="wishlist-btn">
+
+    ❤️
+
+    <span id="wishlist-count">0</span>
+
+</button>
+    <div class="header-icons">
+        <button id="cart-btn">
+            🛒
+            <span id="cart-count">0</span>
+        </button>
+    </div>
+
+</header>
+
+<main>
+
+    <section id="hero">
+
+        <h1>Wear Your Faith With Confidence</h1>
+
+        <p>
+            Premium Christian streetwear designed
+            to inspire confidence, faith and purpose.
+        </p>
+
+        <div class="hero-buttons">
+
+            <!-- Shop Now Button -->
+            <a href="shop.html" class="primary-btn">
+                Shop Now
+            </a>
+
+            <!-- New Collection Button -->
+            <a href="shop.html#products" class="secondary-btn">
+                New Collection
+            </a>
+
+        </div>
+
+    </section> 
+
+   <section id="featured-products">
+
+    <div class="container">
+
+        <h2>Featured Collection</h2>
+
+        <div class="products">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+
+                <a href="product.html" class="product-image">
+                    <img 
+                        src="images/sivbblack.PNG" 
+                        alt="gitg black t-shirt" 
+                        class="default-image"
+                        >
+                    <img 
+                        src="images/modelbblack.PNG"
+                        alt="gitg model" 
+                        class="hover-image"
+                     >
+                </a>
+                    <button
+                        class="wishlist-btn"
+                        data-id="1">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                <h3>GITG Believe Black T-shirt</h3>
+
+                <p class="price">₦35,000</p>
+
+                <p class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(24 Reviews)</span>
+                </p>
+
+                <button
+                    class="primary-btn add-to-cart"
+                    data-id="1"
+                    data-name="GITG Believe Black T-shirt"
+                    data-price="35000"
+                    data-image="images/sivbblack.PNG"
+                 >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+
+                <a href="product.html" class="product-image">
+                    <img 
+                        src="images/sivbwhite.jpg" 
+                        alt="GITG White Tee" 
+                        class="default-image"
+                     >
+                    <img 
+                        src="images/modelbwhite.png"
+                        alt="gitg model" 
+                        class="hover-image"
+                        >
+                </a>
+                   <button
+                        class="wishlist-btn"
+                        data-id="2">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                <h3>GITG Believe White T-shirt</h3>
+
+                <p class="price">₦35,000</p>
+
+                <p class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(24 Reviews)</span>
+                </p>
+
+                <button
+                    class="primary-btn add-to-cart"
+                    data-id="2"
+                    data-name="GITG Believe T-shirt white"
+                    data-price="35000"
+                    data-image="images/sivbwhite.jpg"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+
+                <a href="product.html" class="product-image">
+                    </button>
+                    <img 
+                        src="images/sivblackhand.PNG" 
+                        alt="GITG hand of God T-shirt"
+                        class="default-image"
+                    >
+                    <img 
+                        src="images/modelbhand.PNG"
+                        alt="gitg model" 
+                        class="hover-image"
+                        >
+                </a>
+                  <button
+                        class="wishlist-btn"
+                        data-id="3">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+            
+
+                <h3>GITG Hand of God Black T-shirt</h3>
+
+                <p class="price">₦40,000</p>
+
+                <p class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(24 Reviews)</span>
+                </p>
+
+                <button
+                    class="primary-btn add-to-cart"
+                    data-id="3"
+                    data-name="GITG Hand of God T-shirt Black"
+                    data-price="40000"
+                    data-image="images/sivblackhand.PNG"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+
+                <a href="product.html" class="product-image">
+                    <img 
+                        src="images/sivwhitehand.PNG" 
+                        alt="GITG Hand of God White T-shirt"
+                        class="default-image"
+                    >
+                    <img 
+                        src="images/modelhandwhite.PNG"
+                        alt="gitg model" 
+                        class="hover-image"
+                    >
+                </a>
+                   <button
+                        class="wishlist-btn"
+                        data-id="4">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+              
+                <h3>GITG Hand of God White T-shirt</h3>
+
+                <p class="price">₦40,000</p>
+
+                <p class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(30 Reviews)</span>
+                </p>
+                <button
+                    class="primary-btn add-to-cart"
+                    data-id="4"
+                    data-name="GITG Hand of God T-shirt White"
+                    data-price="40000"
+                    data-image="images/sivwhitehand.PNG"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+        <div class="products">
+
+            <!-- Product 5 -->
+            <div class="product-card">
+
+                <a href="product.html" class="product-image">
+                    <img src="images/gitgblack.PNG"
+                    alt="gitg black t-shirt"
+                    class="default-image"
+                    >
+                    <img 
+                        src="images/modelgitgblack.PNG"
+                        alt="gitg model" 
+                        class="hover-image"
+                    >
+                </a>
+                    <button
+                        class="wishlist-btn"
+                        data-id="5">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                <h3>GITG White T-shirt</h3>
+
+                <p class="price">₦35,000</p>
+
+                <p class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(24 Reviews)</span>
+                </p>
+
+                <button
+                    class="primary-btn add-to-cart"
+                    data-id="5"
+                    data-name="GITG T-shirt"
+                    data-price="35000"
+                    data-image="images/gitgblack.PNG"
+                  >
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+
+                <a href="product.html" class="product-image">
+                    <img 
+                        src="images/gitgwhite.PNG" 
+                        alt="GITG White Tee"
+                        class="default-image"
+                    >
+                    <img 
+                        src="images/modelgitgwhite.PNG"
+                        alt="gitg model" 
+                        class="hover-image"
+                    >
+                   </a>
+                    <button
+                        class="wishlist-btn"
+                        data-id="6">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                
+
+                <h3>GITG White T-shirt</h3>
+
+                <p class="price">₦35,000</p>
+
+                <p class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(18 Reviews)</span>
+                </p>
+
+                <button
+                    class="primary-btn add-to-cart"
+                    data-id="6"
+                    data-name="GITG White T-shirt"
+                    data-price="35000"
+                    data-image="images/gitgwhite.PNG"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+
+                <a href="product.html" class="product-image">
+                    <img 
+                        src="images/sivgitgblack.PNG" 
+                        alt="GITG hand of God T-shirt"
+                        class="default-image"
+                    >
+                    <img 
+                        src="images/modelsivblack.PNG"
+                        alt="gitg model" 
+                        class="hover-image"
+                    >
+                </a>
+                    <button
+                        class="wishlist-btn"
+                        data-id="7">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+             
+
+                <h3>GITG Highs & Lows  T-shirt</h3>
+
+                <p class="price">₦40,000</p>
+
+                <p class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(15 Reviews)</span>
+                </p>
+
+                <button
+                    class="primary-btn add-to-cart"
+                    data-id="7"
+                    data-name="GITG HIGHS&lOWS T-shirt"
+                    data-price="40000"
+                    data-image="images/sivgitgblack.PNG"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card">
+
+                <a href="product.html" class="product-image">
+                    <img 
+                        src="images/sivgitgwhite.PNG" 
+                        alt="GITG Hand of God White T-shirt"
+                        class="default-image"
+                    >
+                    <img 
+                        src="images/modelsivgitgwhite.PNG"
+                        alt="gitg model" 
+                        class="hover-image"
+                    >
+                </a>
+                    <button
+                        class="wishlist-btn"
+                        data-id="8">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+            
+
+                <h3>GITG Highs & Lows  White T-shirt</h3>
+
+                <p class="price">₦40,000</p>
+
+                <p class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(30 Reviews)</span>
+                </p>
+
+                <button
+                    class="primary-btn add-to-cart"
+                    data-id="8"
+                    data-name="GITG Highs&Lows White T-shirt"
+                    data-price="35000"
+                    data-image="images/sivgitgwhite.PNG"
+                  >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+        <div class="products">
+
+            <!-- Product 9 -->
+            <div class="product-card">
+
+                <a href="product.html" class="product-image">
+                    <img 
+                        src="images/sivbblack.PNG" 
+                        alt="gitg black t-shirt"
+                        class="default-image"
+                    >
+                    <img 
+                        src="images/model.png"
+                        alt="gitg model" 
+                        class="hover-image"
+                    >
+                </a>
+                    <button
+                        class="wishlist-btn"
+                        data-id="9">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                
+
+                <h3>GITG Believe Black T-shirt</h3>
+
+                <p class="price">₦35,000</p>
+
+                <p class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(24 Reviews)</span>
+                </p>
+
+                <button
+                    class="primary-btn add-to-cart"
+                    data-id="9"
+                    data-name="GITG Believe Black T-shirt"
+                    data-price="35000"
+                    data-image=""
+                  >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product-card">
+
+                <a href="product.html" class="product-image">
+                    <img 
+                        src="images/sivbwhite.jpg" 
+                        alt="GITG White Tee"
+                        class="default-image"
+                    >
+                    <img 
+                        src="images/model.png"
+                        alt="gitg model" 
+                        class="hover-image"
+                    >
+                </a>
+                    <button
+                        class="wishlist-btn"
+                        data-id="10">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                
+
+                <h3>GITG Believe White T-shirt</h3>
+
+                <p class="price">₦35,000</p>
+
+                <p class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(18 Reviews)</span>
+                </p>
+
+                <button
+                    class="primary-btn add-to-cart"
+                    data-id="10"
+                    data-name="GITG Believe White T-shirt"
+                    data-price="35000"
+                    data-image=""
+                  >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 11 -->
+            <div class="product-card">
+
+                <a href="product.html" class="product-image">
+                    <img 
+                        src="images/sivblackhand.PNG" 
+                        alt="GITG hand of God T-shirt"
+                        class="default-image"
+                    >
+                    <img 
+                        src="images/model.png"
+                        alt="gitg model" 
+                        class="hover-image"
+                    >
+                </a>
+                    <button
+                        class="wishlist-btn"
+                        data-id="11">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                <h3>GITG Hand of God T-shirt</h3>
+
+                <p class="price">₦40,000</p>
+
+                <p class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(15 Reviews)</span>
+                </p>
+
+                <button
+                    class="primary-btn add-to-cart"
+                    data-id="11"
+                    data-name="GITG Hand of God T-shirt"
+                    data-price="40000"
+                    data-image=""
+                  >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 12-->
+            <div class="product-card">
+
+                <a href="product.html" class="product-image">
+                    <img 
+                        src="images/sivwhitehand.PNG" 
+                        alt="GITG Hand of God White T-shirt"
+                        class="default-image"
+                    >
+                    <img 
+                        src="images/model.png"
+                        alt="gitg model" 
+                        class="hover-image"
+                    >
+                </a>
+                  <button
+                        class="wishlist-btn"
+                        data-id="12">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+               
+
+                <h3>GITG Hand of God White T-shirt</h3>
+
+                <p class="price">₦40,000</p>
+
+                <p class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(30 Reviews)</span>
+                </p>
+
+                <button
+                    class="primary-btn add-to-cart"
+                    data-id="12"
+                    data-name="GITG Hand of God White T-shirt"
+                    data-price="40000"
+                    data-image=""
+                  >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+        <div class="products">
+
+            <!-- Product 13 -->
+            <div class="product-card">
+
+                <a href="product.html" class="product-image">
+                    <img 
+                        src="images/sivbblack.PNG" 
+                        alt="gitg black t-shirt"
+                        class="default-image"
+                    >
+                    <img 
+                        src="images/model.png"
+                        alt="gitg model" 
+                        class="hover-image"
+                    >
+                </a>
+                   <button
+                        class="wishlist-btn"
+                        data-id="13">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+               
+
+                <h3>GITG Believe Black T-shirt</h3>
+
+                <p class="price">₦35,000</p>
+
+                <p class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(24 Reviews)</span>
+                </p>
+
+                <button
+                    class="primary-btn add-to-cart"
+                    data-id="13"
+                    data-name="GITG Believe Black T-shirt"
+                    data-price="35000"
+                    data-image=""
+                  >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 14 -->
+            <div class="product-card">
+
+                <a href="product.html" class="product-image">
+                    <img 
+                        src="images/sivbwhite.jpg" 
+                        alt="GITG White Tee"
+                        class="default-image"
+                    >
+                    <img 
+                        src="images/model.png"
+                        alt="gitg model" 
+                        class="hover-image"
+                    >
+                </a>
+                    <button
+                        class="wishlist-btn"
+                        data-id="14">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                <h3>GITG Believe White T-shirt</h3>
+
+                <p class="price">₦35,000</p>
+
+                <p class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(18 Reviews)</span>
+                </p>
+
+                <button
+                    class="primary-btn add-to-cart"
+                    data-id="14"
+                    data-name="GITG Believe White T-shirt"
+                    data-price="35000"
+                    data-image=""
+                  >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 15 -->
+            <div class="product-card">
+
+                <a href="product.html" class="product-image">
+                    <img 
+                        src="images/sivblackhand.PNG" 
+                        alt="GITG hand of God T-shirt"
+                        class="default-image"
+                    >
+                    <img 
+                        src="images/model.png"
+                        alt="gitg model" 
+                        class="hover-image"
+                    >
+                </a>
+                    <button
+                        class="wishlist-btn"
+                        data-id="15">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+            
+
+                <h3>GITG Hand of God T-shirt</h3>
+
+                <p class="price">₦40,000</p>
+
+                <p class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(15 Reviews)</span>
+                </p>
+
+                <button
+                    class="primary-btn add-to-cart"
+                    data-name="GITG Hand of God T-shirt"
+                    data-price="40000"
+                    data-image=""
+                  >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 16 -->
+            <div class="product-card">
+
+                <a href="product.html" class="product-image">
+                    <img 
+                        src="images/sivwhitehand.PNG" 
+                        alt="GITG Hand of God White T-shirt"
+                        class="default-image"
+                    >
+                    <img 
+                        src="images/modelbblack.PNG"
+                        alt="gitg model" 
+                        class="hover-image"
+                    >
+                </a>
+                    <button
+                        class="wishlist-btn"
+                        data-id="16">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                <h3>GITG Hand of God White T-shirt</h3>
+
+                <p class="price">₦40,000</p>
+
+                <p class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(30 Reviews)</span>
+                </p>
+
+                <button
+                    class="primary-btn add-to-cart"
+                    data-id="16"
+                    data-name="GITG Hand of God White T-shirt"
+                    data-price="40000"
+                    data-image=""
+                  >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+    <section id="our-story">
+
+    <div class="container">
+
+        <h2>Our Story</h2>
+
+        <p>
+            GITG Collection (God Is The Greatest) was created to inspire believers to wear their faith with confidence.
+            We believe fashion is more than clothing—it's a way to express purpose, hope, and identity.
+            Every piece is designed with quality, simplicity, and faith at its core.
+        </p>
+
+    </div>
+
+</section>
+<section id="why-choose">
+
+    <div class="container">
+
+        <h2>Why Choose GITG?</h2>
+
+        <div class="features">
+
+            <div class="feature-card">
+                <h3>Premium Quality</h3>
+                <p>High-quality fabrics made for comfort and durability.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Faith Inspired</h3>
+                <p>Every design carries a message that reflects God's greatness.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Worldwide Shipping</h3>
+                <p>We deliver our products safely to customers around the world.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="customer-reviews">
+
+    <div class="container">
+
+        <h2>Customer Reviews</h2>
+
+        <div class="reviews">
+
+            <div class="review-card">
+
+                <h3>⭐⭐⭐⭐⭐</h3>
+
+                <p>
+                    "Amazing quality! I love the message behind the brand."
+                </p>
+
+                <h4>- David</h4>
+
+            </div>
+
+            <div class="review-card">
+
+                <h3>⭐⭐⭐⭐⭐</h3>
+
+                <p>
+                    "The hoodie fits perfectly and the material feels premium."
+                </p>
+
+                <h4>- Sarah</h4>
+
+            </div>
+
+            <div class="review-card">
+
+                <h3>⭐⭐⭐⭐⭐</h3>
+
+                <p>
+                    "Definitely buying again. Highly recommended!"
+                </p>
+
+                <h4>- Michael</h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+<section id="newsletter">
+
+    <div class="container">
+
+        <h2>Stay Connected</h2>
+
+        <p>
+            Subscribe to receive exclusive offers, new collections, and special announcements.
+        </p>
+
+        <form>
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<footer id="footer">
+
+    <div class="container">
+
+        <img src="images/logo.png" alt="GITG Collection Logo" class="footer-logo">
+
+        <p>
+            Wear Your Faith With Confidence.
+        </p>
+
+        <nav>
+
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+
+        </nav>
+    <div class="social-icons">
+
+            <a href="https://instagram.com/gitg._collections" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://facebook.com/gitg._collections" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://tiktok.com/@gitg_collections" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+            <a href="https://youtube.com/@gitg_collections" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <a href="https://x.com/gitg_collections" target="_blank">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+
+   </div>
+        <p>
+            © 2026 GITG Collection. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+<!-- =========================
+     CART SIDEBAR
+========================= -->
+
+<div id="cart-sidebar">
+
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+
+        <button id="close-cart">&times;</button>
+    </div>
+
+    <div id="cart-items">
+
+        <p class="empty-cart">
+            Your cart is empty.
+        </p>
+
+    </div>
+
+    <div class="cart-footer">
+
+        <h3>
+            Total:
+            <span id="cart-total">₦0</span>
+        </h3>
+
+        <button class="primary-btn">
+            Checkout
+        </button>
+
+    </div>
+
+</div>
+
+<div id="cart-overlay"></div>
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+<script src="js/products.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
